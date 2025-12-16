@@ -13,8 +13,9 @@ XChange is a currency exchange dashboard that is useful for converting money fro
 
 ## Setup instructions
 
-First, install and use node:
+First, update sudo, install node and use it:
 ```bash
+sudo apt update
 nvm install node
 nvm use node
 ```
@@ -23,6 +24,11 @@ Then, install dependencies
 
 ```bash
 npm install
+```
+
+In case of error while doing npm install:
+```bash
+sudo apt install -y libatomic1
 ```
 
 For starting the project at localhost:
