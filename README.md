@@ -1,36 +1,50 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Description
+XChange is a currency exchange dashboard that is useful for converting money from one currency to another, viewing different currency exchange rates and more. It uses Frankfurter API for getting the currency conversion rates. It has three principal tools:
 
-## Getting Started
+1.- Currency Converter: With this tool, you can select a base currency and a target currency, then, enter an amount of money in base currency to convert it to money in target currency.
 
-First, run the development server:
+2.- Exchange Rates table: This tool shows all the current currency exchange rates based on the base currency you previously selected in the Currency Converter.
+
+3.- Exchange Rates graphic (Between base currency and target currency): (I will explain it in the Innovation feature section).
+
+## Setup instructions
+
+First, install and use node:
+```bash
+nvm install node
+nvm use node
+```
+
+Then, install dependencies
+
+```bash
+npm install
+```
+
+For starting the project at localhost:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Innovation feature
+The feature that I implemented is the Exchange Rates Graphic that I mentioned before, this tool shows how the conversion rates between the base currency and the target currency has varied over time, you can select different date ranges: Last 7 days, Last month and Last year. With this options you can view the variance in conversion from the base currency to the target currency that you selected before in the selected date range. I chose it because it is very useful for people who want to send money internationally, as they can check when their base currency will have the highest value in the destination currency before sending it. This feature greatly improves the user experience, since the visual presentation makes it easier to understand the conversion rates between two currencies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## AI Usage
+In this project I used AI for debugging small functions in different sections and ensure the correct functioning of the app, Also, I asked it for the Graphic's gradient.
 
-## Learn More
+## Assumptions and Trade-Offs
+The only two assumptions I made were:
 
-To learn more about Next.js, take a look at the following resources:
+1.- The select base currency and select destination currency buttons are general for all of the components, so it does not repeat over the app.
+2.- In the Exchange Rates table I directly show the conversion between (1 currency) to Base Currency and not the rates themselves
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+And the principal trade-off I made is, for changing the base and destination currency in real time, I had to load all of the currency exchange rates again and it is a bit laggy because it changes the Table and the Graphic in real time.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Possible Improvements
+With more time, I would improve the UI, making it prettier and more comfortable for the user experience, also, improve general details like being able to write letters in the conversion input, and improving the responsive design. 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
