@@ -43,7 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 The feature that I implemented is the Exchange Rates Graphic that I mentioned before, this tool shows how the conversion rates between the base currency and the target currency has varied over time, you can select different date ranges: Last 7 days, Last month and Last year. With this options you can view the variance in conversion from the base currency to the target currency that you selected before in the selected date range. I chose it because it is very useful for people who want to send money internationally, as they can check when their base currency will have the highest value in the destination currency before sending it. This feature greatly improves the user experience, since the visual presentation makes it easier to understand the conversion rates between two currencies.
 
 ## AI Usage
-In this project I used AI for debugging small functions in different sections and ensure the correct functioning of the app, Also, I asked it for the Graphic's gradient.
+In this project I used AI for debugging small functions in different sections and ensure the correct functioning of the app, Also, I asked it for the Graphic's gradient. There was no usage of AI for the logic and the components of the app.
 
 ## Assumptions and Trade-Offs
 The only two assumptions I made were:
