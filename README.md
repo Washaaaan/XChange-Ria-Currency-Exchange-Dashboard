@@ -54,6 +54,6 @@ The only two assumptions I made were:
 And the principal trade-off I made is, for changing the base and destination currency in real time, I had to load all of the currency exchange rates again and it is a bit laggy because it changes the Table and the Graphic in real time.
 
 ## Possible Improvements
-With more time, I would improve the UI, making it prettier and more comfortable for the user experience, also, improve general details like being able to write letters in the conversion input, and improving the responsive design. 
+With more time, I would improve the UI, making it prettier and more comfortable for the user experience, also, improve general details like being able to write letters in the conversion input, and improving the responsive design (it is responsive, but it can be better). 
 
 
