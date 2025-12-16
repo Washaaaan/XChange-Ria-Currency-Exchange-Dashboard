@@ -1,4 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Deploy
+https://ria-currency-challenge.vercel.app/
+
 ## Description
 XChange is a currency exchange dashboard that is useful for converting money from one currency to another, viewing different currency exchange rates and more. It uses Frankfurter API for getting the currency conversion rates. It has three principal tools:
 
